@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/entitlements",
+      "handler": "entitlement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entitlements/count",
+      "handler": "entitlement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entitlements/:id",
+      "handler": "entitlement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/entitlements",
+      "handler": "entitlement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/entitlements/:id",
+      "handler": "entitlement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/entitlements/:id",
+      "handler": "entitlement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

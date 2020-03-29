@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bank-holidays",
+      "handler": "bank-holiday.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bank-holidays/search",
+      "handler": "bank-holiday.findRange",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bank-holidays/count",
+      "handler": "bank-holiday.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bank-holidays/:id",
+      "handler": "bank-holiday.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bank-holidays",
+      "handler": "bank-holiday.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bank-holidays/:id",
+      "handler": "bank-holiday.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bank-holidays/:id",
+      "handler": "bank-holiday.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "database": "svelte_hols_dev",
+        "username": "svelte_hols",
+        "password": "svelte_hols"
+      },
+      "options": {}
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "${process.env.PROD_DB_HOST}",
+        "port": "${process.env.PROD_DB_PORT}",
+        "database": "${process.env.PROD_DB_NAME}",
+        "username": "${process.env.PROD_DB_USER}",
+        "password": "${process.env.PROD_DB_PWD}"
+      },
+      "options": {}
+    }
+  }
+}
