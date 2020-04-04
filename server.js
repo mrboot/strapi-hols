@@ -4,7 +4,7 @@ const strapi = require('strapi');
 const cron = require('node-cron');
 const fetch = require('node-fetch');
 
-const BANK_HOL_API_URL = `${process.env.PROD_API_URL}bank-holidays`
+const BANK_HOL_API_URL = `${process.env.API_URL}/bank-holidays`
 
 // Start Strapi
 strapi(/* {...} */).start();
