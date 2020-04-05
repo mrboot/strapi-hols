@@ -1,3 +1,3 @@
-# Strapi application
+# Strapi API Backend
 
-A quick description of your strapi application
+Backend API for yet another iteration of the holiday app
