@@ -1,13 +1,8 @@
 require('dotenv').config()
 
-const strapi = require('strapi');
-const cron = require('node-cron');
 const fetch = require('node-fetch');
 
 const BANK_HOL_API_URL = `${process.env.API_URL}/bank-holidays`
-
-// Start Strapi
-strapi(/* {...} */).start();
 
 async function addBankHols() {
   console.log('Fetching Bank Hols...')
@@ -35,7 +30,4 @@ async function addBankHols() {
   })
 }
 
-// Run every Sunday at 00:15 to update bank holidays in the DB
-cron.schedule('15 0 * * 0', function() {
-  addBankHols()
-});
+addBankHols()
